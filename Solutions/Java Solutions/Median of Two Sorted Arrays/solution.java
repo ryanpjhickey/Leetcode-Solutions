@@ -4,11 +4,11 @@ class Solution {
         int m = nums1.length;
         int n = nums2.length;
         int length = m + n;
-        int indexArrayA = 0; 
-        int indexArrayB= 0; 
-        int previousNode = 0;          
-        int currentNode = 0;        
-        int index = 0;       
+        int indexArrayA = 0;
+        int indexArrayB= 0;
+        int previousNode = 0;
+        int currentNode = 0;       
+        int index = 0; 
         
         while(index ++ <= (length / 2)) 
         {     
