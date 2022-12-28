@@ -11,14 +11,14 @@ class Solution {
         int index = 0; 
         
         while(index ++ <= (length / 2)) 
-        {     
+        {
             
-            previousNode = currentNode;          
+            previousNode = currentNode;       
 
-            if(indexArrayA >= m) 
+            if(indexArrayA >= m)
             {     
                 currentNode = nums2[indexArrayB++];   
-                continue;                
+                continue;
             } 
             
             if(indexArrayB>= n ) 
