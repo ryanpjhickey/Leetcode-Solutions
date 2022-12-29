@@ -1,4 +1,4 @@
-class Solution {
+class Solution1 {
     public int maximumWealth(int[][] accounts) {
 
         int wealthMax = 0; // define our "res" as 0 initially, use as starting point for our wealthMax
