@@ -5,7 +5,7 @@ class Solution2 {
         mapToInt(wealth -> Arrays.stream(wealth). //use mapToInt...
         sum()).max().getAsInt(); //... so that we can use sum, max, and getAsInt, to return our Richest Customer Wealth as int wealthMax!
 
-        return wealthMax
+        return wealthMax;
 
     }
 }
