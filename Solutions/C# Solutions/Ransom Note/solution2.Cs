@@ -1,5 +1,7 @@
 public class Solution {
     public bool CanConstruct(string ransomNote, string magazine) {
+
+        if (ransomNote.length() > magazine.length()) return false; //return false if pre-requisite is not met
         
         var newDictionary = new Dictionary<char, int>(); //create our dictionary of available characters
         
