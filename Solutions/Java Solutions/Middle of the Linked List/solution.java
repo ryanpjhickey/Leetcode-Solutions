@@ -13,11 +13,11 @@ class Solution {
         ListNode slowPointer = head; //create our slow pointer
         ListNode fastPointer = head; //create our fast pointer
 
-        while (fastPointer != null && fastPointer.next != null) {
-            slowPointer = slowPointer.next;
-            fastPointer = fastPointer.next.next;
+        while (fastPointer != null && fastPointer.next != null) { //while fastPointer and fastPointer.next nodes exist, do the following
+            slowPointer = slowPointer.next; //move our slowPointer over by one
+            fastPointer = fastPointer.next.next; //move our fastPointer over by two
         };
 
-        return slowPointer; //return our middle node of the linked list
+        return slowPointer; //return our slowPointer value, which will be the middle node of the linked list
     }
 }
