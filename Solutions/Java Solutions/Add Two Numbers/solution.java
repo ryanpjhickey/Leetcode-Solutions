@@ -24,8 +24,8 @@ class Solution {
                 carry += l2.val;
                 l2 = l2.next;
             }
-            pointer.next = new ListNode(carry % 10); //set our pointer.next value to divide our carry var by 10 with remainder
-            carry /= 10; //divde carry var by 10 again
+            pointer.next = new ListNode(carry % 10); //set our pointer.next value to divide our carry var by 10 giving us remainder val
+            carry /= 10; //divde carry var by 10 and save value to carry var
             pointer = pointer.next; //set our pointer to pointer.next
         }
         return head.next; //return our answer
