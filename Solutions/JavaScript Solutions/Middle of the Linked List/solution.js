@@ -11,13 +11,13 @@
  */
 var middleNode = function (head) {
 
-    let slowPointer = head;
+    let slowPointer = head; //create our pointers
     let fastPointer = head;
 
-    while (fastPointer != null && fastPointer.next != null) {
-        slowPointer = slowPointer.next;
-        fastPointer = fastPointer.next.next;
+    while (fastPointer != null && fastPointer.next != null) { //while fastPointer and fastPointer.next both have values...
+        slowPointer = slowPointer.next; //move slowPointer right by one
+        fastPointer = fastPointer.next.next; //move fastPointer right by two
     };
 
-    return slowPointer;
+    return slowPointer; //return our slowPointer when fastPointer and fastPointer.next both do not have values, which will be the middle of the linked list
 };
