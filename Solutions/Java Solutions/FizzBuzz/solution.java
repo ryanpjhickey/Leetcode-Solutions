@@ -1,7 +1,7 @@
 public class Solution {
     public List<String> fizzBuzz(int n) {
         List<String> newList = new ArrayList<String>(n);
-        for(int index=1; index<=n ;index++){
+        for(int index=1; index<=n; index++) {
             String empty = ""; //create an empty string
             if (index % 3 == 0 && index % 5 == 0) { //if divisible by 3 and 5, add FizzBuzz to string
                empty+="FizzBuzz";
@@ -9,8 +9,8 @@ public class Solution {
                empty+="Fizz";
             } else if (index % 5 == 0) { //if divisible by 5, add Buzz to string
                empty+="Buzz";
-            } else { //otherwise, add index value to string
-               empty=String.valueOf(index)
+            } else { //otherwise, change current index to value of empty
+               empty=String.valueOf(index);
             }
             newList.add(empty);
         }

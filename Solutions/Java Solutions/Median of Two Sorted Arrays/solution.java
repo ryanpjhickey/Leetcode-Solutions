@@ -8,7 +8,7 @@ class Solution {
         int indexArrayB= 0;
         int previousNode = 0;
         int currentNode = 0;       
-        int index = 0; 
+        int index = 0;
         
         while(index ++ <= (length / 2)) 
         {
@@ -17,19 +17,19 @@ class Solution {
 
             if(indexArrayA >= m)
             {     
-                currentNode = nums2[indexArrayB++];   
+                currentNode = nums2[indexArrayB++];
                 continue;
             } 
             
             if(indexArrayB>= n ) 
             {   
-                currentNode = nums1[indexArrayA ++];
+                currentNode = nums1[indexArrayA++];
                 continue;
             } 
 
             if(nums1[indexArrayA] < nums2[indexArrayB]) 
             {  
-                currentNode = nums1[indexArrayA ++];
+                currentNode = nums1[indexArrayA++];
             }
           
           else 
@@ -38,7 +38,7 @@ class Solution {
             }
         }
         
-        if(length % 2 == 0) 
+        if(length % 2 == 0)
         {   
             return (double) (previousNode  + currentNode) / 2; 
         } 
