@@ -13,26 +13,26 @@ class Solution {
         while(index ++ <= (length / 2)) 
         {
             
-            previousNode = currentNode;       
+            previousNode = currentNode;
 
             if(indexArrayA >= m)
-            {     
+            {
                 currentNode = nums2[indexArrayB++];
                 continue;
-            } 
-            
-            if(indexArrayB>= n ) 
-            {   
-                currentNode = nums1[indexArrayA++];
-                continue;
-            } 
-
-            if(nums1[indexArrayA] < nums2[indexArrayB]) 
-            {  
-                currentNode = nums1[indexArrayA++];
             }
-          
-          else 
+            
+            if(indexArrayB>= n )
+            {
+                currentNode = nums1[indexArrayA ++];
+                continue;
+            }
+
+            if(nums1[indexArrayA] < nums2[indexArrayB])
+            {
+                currentNode = nums1[indexArrayA ++];
+            }
+
+          else
             {
                 currentNode = nums2[indexArrayB++];
             }
@@ -40,10 +40,10 @@ class Solution {
         
         if(length % 2 == 0)
         {   
-            return (double) (previousNode  + currentNode) / 2; 
-        } 
+            return (double) (previousNode  + currentNode) / 2;
+        }
 
-        else 
+        else
         {
             return (double) currentNode;
         }
