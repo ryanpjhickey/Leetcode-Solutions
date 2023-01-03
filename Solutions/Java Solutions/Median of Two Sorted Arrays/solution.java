@@ -13,37 +13,37 @@ class Solution {
         while(index ++ <= (length / 2)) 
         {
             
-            previousNode = currentNode;       
+            previousNode = currentNode;
 
             if(indexArrayA >= m)
-            {     
-                currentNode = nums2[indexArrayB++];   
+            {
+                currentNode = nums2[indexArrayB++];
                 continue;
-            } 
+            }
             
-            if(indexArrayB>= n ) 
-            {   
+            if(indexArrayB>= n )
+            {
                 currentNode = nums1[indexArrayA ++];
                 continue;
-            } 
+            }
 
-            if(nums1[indexArrayA] < nums2[indexArrayB]) 
-            {  
+            if(nums1[indexArrayA] < nums2[indexArrayB])
+            {
                 currentNode = nums1[indexArrayA ++];
             }
-          
-          else 
+
+          else
             {
                 currentNode = nums2[indexArrayB++];
             }
         }
         
-        if(length % 2 == 0) 
+        if(length % 2 == 0)
         {   
-            return (double) (previousNode  + currentNode) / 2; 
-        } 
+            return (double) (previousNode  + currentNode) / 2;
+        }
 
-        else 
+        else
         {
             return (double) currentNode;
         }
