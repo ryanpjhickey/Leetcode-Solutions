@@ -22,7 +22,7 @@ class Solution {
             else if (nums[mid] < target) {
 				low = mid + 1;
 			} 
-            //Target, then need to find the lowest array index value and the highest index value
+            //Found target, now find the lowest array index value and the highest index value
             else {
 				if (nums[low] == nums[mid]) {
 					high--;
