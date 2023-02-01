@@ -3,7 +3,7 @@ class Solution {
 
         //Define useful vars
 		int[] ans = {-1, -1};
-		int low = 0, 
+		int low = 0;
         int high = nums.length - 1;
 
         //Check if array has values, if not return [-1,-1]
@@ -39,6 +39,6 @@ class Solution {
 		}
 
 		return ans;
-        
+
 	}
 }
