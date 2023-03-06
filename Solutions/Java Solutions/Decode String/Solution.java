@@ -5,6 +5,11 @@ public class Solution {
         Stack<Integer> countStack = new Stack<>();
         Stack<String> resStack = new Stack<>();
         int i = 0;
+
+        if (Character.isDigit(s.charAt(i)) && s.length() == 1) {
+            return answer;
+        }
+
         while (i < s.length()) {
             if (Character.isDigit(s.charAt(i))) {
                 int count = 0;
@@ -20,7 +25,7 @@ public class Solution {
             } else if (s.charAt(i) == ']') {
                 StringBuilder temp = new StringBuilder(resStack.pop());
                 int repeatTimes = countStack.pop();
-                for (int i = 0; i < repeatTimes; i++) {
+                for (int j = 0; j < repeatTimes; j++) {
                     temp.append(answer);
                 }
                 answer = temp.toString();
