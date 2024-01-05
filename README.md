@@ -14,7 +14,7 @@ Some problems may have multiple solutions, displayed as solution#.filetype.
 
 ## Contributors
 
-[<img src="https://ca.slack-edge.com/T03EP850QMA-U03MKQ6HKB3-2c9d97da4786-512" width="75" height="75">](https://github.com/ryanpjhickey)
+[<img src="https://avatars.githubusercontent.com/u/108383347?v=4.png" width="75" height="75">](https://github.com/ryanpjhickey)
 
 ---
 
